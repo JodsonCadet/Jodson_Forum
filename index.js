@@ -70,3 +70,9 @@ $table.innerHTML = `
     for (let i = 0; i < NUM_FREELANCERS; i++) {
     CreateRow(arrFreelancers[i]);
     };
+    //8. Write and call a render function that will mount the application onto the document.
+    const render = () => {
+        document.body.appendChild($table);
+         return $table;
+    };
+    render();
